@@ -1,0 +1,30 @@
+﻿<div class="container">
+    <div class="row">
+        <h2>TEST API</h2>
+        <input type="button" value="{{'DAY' | translate}}" class="btn btn-default" data-ng-click="getDaysEvents()"/>
+        <input type="button" value="{{'WEEK' |translate}}" class="btn btn-default" data-ng-click="getWeeksEvents()"/>
+        <input type="button" value="{{'MONTH' |translate}}" class="btn btn-default" data-ng-click="getMonthsEvents()"/>
+        <input type="button" value="{{'NEW' | translate}}" class="btn btn-default" data-ng-click="createEvent()"/>
+
+        <input type="file" value="Upload"/>
+
+        <table class="table">
+            <tr data-ng-repeat="event in events">
+                <td>{{event.Id}}</td>
+                <td>{{event.Subject}}</td>
+                <td>{{event.Body}}</td>
+                <td>{{event.Date}}</td>
+                <td>{{event.From}}</td>
+                <td>{{event.To}}</td>
+                <td>
+                    <input type="button" value="{{'SHOW' | translate}}"
+                           class="btn btn-info" data-ng-click="info(event.Id)"/>
+                </td>
+                <td>
+                    <input type="button" value="{{'DELETE' | translate}}"
+                           class="btn btn-danger" data-ng-click="remove(event.Id)"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

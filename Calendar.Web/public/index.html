@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="calendar" lang="{{ lang }}">
+<head>
+    <title data-translate>CALENDAR_TITLE</title>
+    <meta charset="utf-8" />
+    <!--<link data-ng-href="Content/default/bootstrap.css" rel="stylesheet" />
+    <link data-ng-href="Content/default/bootstrap-theme.css" rel="stylesheet" />-->
+    <link data-ng-href="Content/{{ theme }}/bootstrap.css" rel="stylesheet" />
+    <link data-ng-href="Content/{{ theme }}/bootstrap-theme.css" rel="stylesheet" />
+    <link data-ng-href="Content/{{ theme }}/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div data-ng-include='"templates/header.html"'></div>
+    <div data-ng-view></div>
+    <div data-ng-include='"templates/footer.html"'></div>
+
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-cookies.js"></script>
+    <script src="Scripts/angular-translate.js"></script>
+    <script src="Scripts/angular-translate-loader-static-files.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>
